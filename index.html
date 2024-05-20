@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Salon keyword">
+    <meta name="description" content="The website description">
+    <meta property="og:url" content="https://example.com">
+    <meta property="og:site_name" content="example.com">
+    <meta property="og:type" content="website" />
+    <meta name="twitter:site" content="@ubuntu" />
+
+    <title>Salon Name</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/0e35ab6147.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+
+    <style>
+        .font-zen-maru-gothic {
+            font-family: "Zen Maru Gothic", cursive;
+        }
+
+        .menu-transition {
+            transition: transform 0.5s ease-in-out;
+        }
+    </style>
+
+</head>
+
+<body class="font-zen-maru-gothic">
+
+    <!-- nav -->
+    <nav class="p-6 text-black shadow-md z-50 top-0 sticky bg-white opacity-90">
+        <div class="flex items-center justify-between">
+            <!-- Logo on the Left -->
+            <a href="./index.html" class="flex items-center space-x-3 rtl:space-x-reverse ml-4 xl:ml-32">
+                <h1 class="text-xl">●●株式会社
+                </h1>
+            </a>
+
+            <!-- Navigation Links -->
+            <div class="hidden items-center relative xl:flex" id="menu-links">
+                <div
+                    class="flex flex-col xl:flex-row xl:items-center xl:space-x-16 text-xl xl:text-xl text-center xl:text-left xl:mr-16">
+                    <h1 class="mt-4 xl:mt-0"><a href="./blog-list.html">会社概要</a></h1>
+                    <h1 class="mt-4 xl:mt-0"><a href="http://127.0.0.1:5500/index.html#About">サービス</a></h1>
+                    <h1 class="mt-4 xl:mt-0"><a href="http://127.0.0.1:5500/index.html#Menu">お知らせ</a></h1>
+                    <h1 class="mt-4 xl:mt-0"><a href="http://127.0.0.1:5500/index.html#Access">アクセス</a></h1>
+                </div>
+
+                <div class="flex flex-col xl:flex-row items-center space-x-0 xl:space-x-12 mt-4 xl:mt-0">
+                    <button type="button" class="text-lg py-2 px-8 rounded-3xl mt-4 xl:mt-0 bg-blue-900 text-white">
+                        <a href="http://127.0.0.1:5500/index.html#Booking" class="text-lg xl:text-xl">お問い合わせ</a>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Burger Icon on the Right for Mobile -->
+            <i class="fa-solid fa-bars text-xl xl:hidden px-4 cursor-pointer" id="burger"></i>
+        </div>
+    </nav>
+    <!-- nav end -->
+
+    <!-- image section -->
+    <div class="relative w-full"
+        style="background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.2)),url(./asserts/resourses.jpeg); background-size: cover; background-position: center; height: 100vh;">
+    </div>
+    <!-- image section end -->
+
+    <!-- experience section start -->
+    <div class="pb-8 xl:pt-20 xl:pb-20 xl:pl-36 xl:pr-36">
+        <div class="grid xl:grid-cols-2">
+            <!-- left-content -->
+            <div class="col-span-1">
+                <img src="./asserts/experience.png" alt="experience">
+            </div>
+
+            <!-- right-content -->
+            <div class="flex col-span-1 justify-center items-center text-left text-xl xl:text-2xl font-bold p-4">
+                株式会社00の運営する就活サービス「00就活サイト」は、お陰様で2024年に累計登録者数５万人を突破いたしました。今後もさらなる利便性・信頼性の向上に向け、精進して参ります。
+                いつも弊社サイトをご愛顧いただきありがとうございます。
+            </div>
+        </div>
+    </div>
+    <!-- experience section end -->
+
+    <!-- blog list -->
+    <div class="grid bg-zinc-100">
+        <h1 class="text-6xl mt-6 flex justify-center items-center xl:pt-16 xl:pb-16 ">お知らせ</h1>
+
+        <div class="mt-12 p-2 justify-center items-center xl:pl-80 xl:pr-80">
+            <ul class="text-base md:text-2xl">
+
+                <li class="mb-4 border-b border-zinc-500 pb-6">
+                    <div class="flex justify-between flex-grow">
+                        <div class="flex space-x-8">
+
+                            <!-- published-date -->
+                            <h1 class="">2023/02/11</h1>
+                            <p class="border-2 bg-blue-900 text-white flex w-24 md:w-32 items-center justify-center">
+                                お知らせ</p>
+                            <a href="./blog.html" class="text-lg xl:text-3xl">3号店開店について</a>
+                        </div>
+                        <a href="./blog.html" class="text-4xl opacity-35 hidden"><i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </li>
+
+                <li class="mb-4 border-b border-zinc-500 pb-6">
+                    <div class="flex  justify-between flex-grow">
+                        <div class="flex space-x-8">
+
+                            <!-- published-date -->
+                            <h1 class="">2023/02/11</h1>
+                            <p class="border-2 bg-blue-900 text-white flex w-24 md:w-32 items-center justify-center">
+                                お知らせ</p>
+                            <a href="./blog.html" class="text-lg xl:text-3xl">3号店開店について</a>
+                        </div>
+                        <a href="./blog.html" class="text-4xl opacity-35 hidden"><i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </li>
+
+                <li class="mb-4 border-b border-zinc-500 pb-6">
+                    <div class="flex  justify-between flex-grow">
+                        <div class="flex space-x-8">
+
+                            <!-- published-date -->
+                            <h1 class="">2023/02/11</h1>
+                            <p class="border-2 bg-blue-900 text-white flex w-24 md:w-32 items-center justify-center">
+                                お知らせ</p>
+                            <a href="./blog.html" class="text-lg xl:text-3xl">3号店開店について</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <!-- see all button -->
+            <div class="flex justify-center xl:justify-end xl:items-end mt-8 mb-8">
+                <button type="button" class="flex text-lg py-2 px-8 rounded-3xl mt-4 xl:mt-0 bg-blue-900 text-white">
+                    <a href="http://127.0.0.1:5500/index.html#Booking" class="text-lg xl:text-xl">お問い合わせ</a>
+                </button>
+            </div>
+        </div>
+
+    </div>
+    <!-- blog-list-end -->
+
+    <!-- menu -->
+    <div class="text-black p-4 xl:pr-24 xl:pl-24" id="Menu">
+        <h1 class="text-6xl flex pt-4">Menu</h1>
+
+        <div class="md:p-24">
+            <div class="p-4">
+                <div class="grid gap-6">
+                    <div class="grid xl:grid-cols-3 gap-8">
+                        <div class="xl:col-span-1 justify-center text-center">
+                            <img src="./asserts/blog/blog1.png" alt="menu-item-1" class="mt-6 h-full object-cover">
+                        </div>
+
+                        <div class="xl:col-span-2">
+                            <h1 class="text-3xl mt-4">01</h1>
+                            <h1 class="xl:text-3xl mt-4">人材派遣</h1>
+                            <p class="text-xl xl:text-2xl mt-6 mb-6">短期から中長期までの特定の期間や時間帯での業務や、急な欠員対応での人材募集にも柔軟に対応いたします。
+                                即戦力採用のクオリティ向上、および採用コスト・工数を削減したいという方におすすめです。</p>
+                        </div>
+                    </div>
+
+                    <div class="grid xl:grid-cols-3 gap-8">
+                        <div class="xl:col-span-1 ">
+                            <img src="./asserts/blog/blog2.png" alt="menu-item-1" class="mt-6 h-full object-cover">
+                        </div>
+
+                        <div class="xl:col-span-2">
+                            <h1 class="text-3xl mt-4">02</h1>
+                            <h1 class="xl:text-3xl mt-4">紹介予定派遣</h1>
+                            <p class="text-xl xl:text-2xl mt-6 mb-6">短期から中長期までの特定の期間や時間帯での業務や、急な欠員対応での人材募集にも柔軟に対応いたします。
+                                即戦力採用のクオリティ向上、および採用コスト・工数を削減したいという方におすすめです。</p>
+                        </div>
+                    </div>
+
+                    <div class="grid xl:grid-cols-3 gap-8">
+                        <div class="xl:col-span-1 ">
+                            <img src="./asserts/blog/blog3.png" alt="menu-item-1" class="mt-6 h-full object-cover">
+                        </div>
+
+                        <div class="xl:col-span-2">
+                            <h1 class="text-3xl mt-4">03</h1>
+                            <h1 class="xl:text-3xl mt-4">人材派遣</h1>
+                            <p class="text-xl xl:text-2xl mt-6 mb-6">短期から中長期までの特定の期間や時間帯での業務や、急な欠員対応での人材募集にも柔軟に対応いたします。
+                                即戦力採用のクオリティ向上、および採用コスト・工数を削減したいという方におすすめです。</p>
+                        </div>
+                    </div>
+
+                    <div class="grid xl:grid-cols-3 gap-8">
+                        <div class="xl:col-span-1 ">
+                            <img src="./asserts/blog/blog4.png" alt="menu-item-1" class="mt-6 h-full object-cover">
+                        </div>
+
+                        <div class="xl:col-span-2">
+                            <h1 class="text-3xl mt-4">04</h1>
+                            <h1 class="xl:text-3xl mt-4">人材派遣</h1>
+                            <p class="text-xl xl:text-2xl mt-6 mb-6">短期から中長期までの特定の期間や時間帯での業務や、急な欠員対応での人材募集にも柔軟に対応いたします。
+                                即戦力採用のクオリティ向上、および採用コスト・工数を削減したいという方におすすめです。</p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- menu-end -->
+
+
+    <!-- map -->
+    <div id="Access" class="bg-zinc-100 pt-20 pb-20 xl:pr-32 xl:pl-32">
+        <h1 class="text-4xl md:text-6xl text-center mb-6">アクセス</h1>
+        <div class="grid grid-cols-1 xl:grid-cols-2 p-4 ">
+
+            <!-- left content -->
+            <div class="justify-center text-center xl:text-left xl:gap-12">
+
+                <!-- address -->
+                <div class="xl:mt-12">
+                    <p class="border-2 bg-blue-900 text-white flex w-24 xl:w-24 items-center justify-center">住所</p>
+                    <p>〒220-8121　</p>
+                    <p>神奈川県横浜市西区みなとみらい二丁目2番1号 <br> 横浜ランドマークタワー21階</p>
+                </div>
+
+                <!-- nearest station -->
+                <div class="mt-4">
+                    <p class="border-2 bg-blue-900 text-white flex w-24 xl:w-24 items-center justify-center">最寄駅</p>
+                    <p class="mt-2">JR京浜東北線「桜木町」駅より徒歩5分 <br> みなとみらい線「みなとみらい」駅より徒歩3分</p>
+                </div>
+
+                <!-- tel -->
+                <div class="mt-4">
+                    <p class="border-2 bg-blue-900 text-white flex w-24 xl:w-24 items-center justify-center">TEL</p>
+                    <p>045-264-6322</p>
+                </div>
+
+                <!-- mail -->
+                <div class="mt-4">
+                    <p class="border-2 bg-blue-900 text-white flex w-24 xl:w-24 items-center justify-center">MAIL</p>
+                    <p>mail@gmail.com</p>
+                </div>
+
+            </div>
+
+            <!-- right content -->
+            <div class="p-4">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2201.4800510757295!2d69.53226130457813!3d41.31090893073936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae562bbe77afe1%3A0x8f8c8c8697755afd!2s8G6J%2BM2G%2C%20Yangibazar%2C%20Tashkent%20Region%2C%20Uzbekistan!5e0!3m2!1sen!2s!4v1715661627978!5m2!1sen!2s"
+                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+    </div>
+    <!-- map-end -->
+
+    <!-- form -->
+    <div class="bg-white text-black md:pt-12 md:pb-12" id="form">
+
+        <form class="bg-white p-4 mx-auto md:max-w-4xl md:p-8" onsubmit="redirectToPage(event)">
+            <div class="text-center mb-8 mt-8 md:mt-4 text-6xl">
+                <h1>接触</h1>
+            </div>
+            <div class="grid md:grid-cols-2 md:gap-6">
+                <div class="relative z-0 w-full mb-5 group">
+                    <label>Name <span class="text-red-600">*</span></label>
+                    <input type="text" name="name" id="first_name"
+                        class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-2 border-gray-300 focus:outline-none focus:ring-0 focus:border-black"
+                        placeholder=" Ex : Nato" required />
+                </div>
+                <div class="relative z-0 w-full mb-5 group">
+                    <label>Surname <span class="text-red-600">*</span></label>
+                    <input type="text" name="name" id="second_name"
+                        class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-2 border-gray-300 focus:outline-none focus:ring-0 focus:border-black"
+                        placeholder=" Ex : Testov" required />
+                </div>
+
+                <div class="relative z-0 w-full mb-5 group">
+                    <label>Email <span class="text-red-600">*</span></label>
+                    <input type="email" name="Email" id="email"
+                        class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-2 border-gray-300 focus:outline-none focus:ring-0 focus:border-black"
+                        placeholder=" Ex: admin@mail.com" required />
+                </div>
+                <div class="relative z-0 w-full mb-5 group">
+                    <label>Phone Number <span class="text-red-600">*</span></label>
+                    <input type="tel" name="Phone" id="second_name"
+                        class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-2 border-gray-300 focus:outline-none focus:ring-0 focus:border-black"
+                        placeholder=" Ex: +998 99 123 45 67" required />
+                </div>
+
+            </div>
+
+            <div class="relative z-0 w-full mb-5 group">
+                <label>Text <span class="text-red-600">*</span></label>
+                <input type="text" name="Email" id="email"
+                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-2 border-gray-300 focus:outline-none focus:ring-0 focus:border-black"
+                    placeholder=" Ex: admin@mail.com" required />
+            </div>
+
+
+            <!-- dropdown-form-->
+            <div class="grid md:grid-cols-2 md:gap-6">
+
+                <div class="relative">
+                    <label for="countries" class="block text-sm font-medium text-gray-900">Select
+                        an option</label>
+                    <input datepicker type="date"
+                        class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-2 border-gray-300 focus:outline-none focus:ring-0 focus:border-black"
+                        placeholder="Select date">
+                </div>
+
+                <div class="">
+                    <label for="countries" class="block text-sm font-medium text-gray-900">Select
+                        an option</label>
+                    <select id="countries"
+                        class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-2 border-gray-300 focus:outline-none focus:ring-0 focus:border-black">
+                        <option selected>Choose a country</option>
+                        <option value="US">United States</option>
+                        <option value="CA">Canada</option>
+                        <option value="FR">France</option>
+                        <option value="DE">Germany</option>
+                    </select>
+                </div>
+
+            </div>
+            <!-- dropdown-form-end-->
+
+            <div class="mt-5">
+                <label for="countries" class="block text-sm font-medium text-gray-900">Select
+                    an option</label>
+                <select id="countries"
+                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-2 border-gray-300 focus:outline-none focus:ring-0 focus:border-black">
+                    <option selected>Choose a country</option>
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="FR">France</option>
+                    <option value="DE">Germany</option>
+                </select>
+            </div>
+
+            <!-- checkbox-field -->
+            <div class="mt-5">
+                <label>Text <span class="text-red-600">*</span></label>
+                <div class="flex items-center mt-2 mb-4">
+                    <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 rounded">
+                    <label for="default-checkbox" class="ms-2 text-sm">接触 接触 接触 接触</label>
+                </div>
+                <div class="flex items-center mb-4">
+                    <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 rounded">
+                    <label for="default-checkbox" class="ms-2 text-sm">接触</label>
+                </div>
+                <div class="flex items-center mb-4">
+                    <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 rounded">
+                    <label for="default-checkbox" class="ms-2 text-sm">接触 接触</label>
+                </div>
+                <div class="flex items-center mb-4">
+                    <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 rounded">
+                    <label for="default-checkbox" class="ms-2 text-sm">Default checkbox</label>
+                </div>
+                <div class="flex items-center mb-4">
+                    <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 rounded">
+                    <label for="default-checkbox" class="ms-2 text-sm">Default 接触</label>
+                </div>
+
+            </div>
+            <!-- checkbox-field-end -->
+
+            <div class="mt-5">
+                <label for="countries" class="block text-sm font-medium text-gray-900">Select an option</label>
+                <select id="countries"
+                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-2 border-gray-300 focus:outline-none focus:ring-0 focus:border-black">
+                    <option selected>Choose a country</option>
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="FR">France</option>
+                    <option value="DE">Germany</option>
+                </select>
+            </div>
+
+            <div class="relative z-0 w-full mb-5 group">
+                <label>Name <span class="text-red-600">*</span></label>
+                <input type="text" name="name" id="first_name"
+                    class="block py-5 px-0 w-full text-sm text-gray-900 bg-transparent border-2 border-gray-300 focus:outline-none focus:ring-0 focus:border-black"
+                    placeholder=" Ex : Nato" required />
+            </div>
+
+            <!-- media-input -->
+            <div class="grid items-center mt-5">
+                <label class="mb-2">Enter your media file here</label>
+                <input type="file" placeholder="image">
+            </div>
+            <!-- media-input-end -->
+
+            <!-- terms of conditions -->
+            <div class="flex items-center mt-5">
+                <input id="link-checkbox" type="checkbox" value="" class="ms-2 text-sm" required>
+                <label for="link-checkbox" class="ms-2 text-sm">I agree
+                    with the <a href="#" class="text-blue-600 dark:text-blue-500 hover:underline">terms and
+                        conditions</a>.</label>
+            </div>
+
+            <div class="mt-5">
+                <h1 class="text-sm xl:text-lg">神奈川県横浜市西区みなとみらい二丁目2番1号横浜ランドマークタワー21階</h1>
+            </div>
+            <!-- terms-of-conditions-end -->
+
+            <div class="justify-center text-center mt-5">
+                <button type="submit"
+                    class="text-white bg-blue-900 text-sm w-32 sm:w-auto px-5 py-2.5 text-center">Submit</button>
+            </div>
+        </form>
+
+
+
+    </div>
+    <!-- form-end -->
+
+
+    <!-- footer -->
+    <footer class="text-white bg-blue-900 p-4 xl:pr-40 xl:pl-40 xl:pt-5 xl:pb-5 text-center">
+        <div class="">
+            <div>
+                <p>〒220-8121　</p>
+                <p>神奈川県横浜市西区みなとみらい二丁目2番1号 横浜ランドマークタワー21階</p>
+                <p>045-264-6322</p>
+            </div>
+            <p class="mt-2">@2024 ●●株式会社</p>
+
+        </div>
+    </footer>
+    <!-- footer-end -->
+
+
+
+    <!-- google maps -->
+    <script>(g => { var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => { await (a = m.createElement("script")); e.set("libraries", [...r] + ""); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.${c}apis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a) })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)) })
+            ({ key: "AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg", v: "weekly" });</script>
+
+    <script src="./index.js"></script>
+
+    <script>
+        function redirectToPage(event) {
+            event.preventDefault();
+
+            window.location.href = "thanks.html"
+        }
+    </script>
+
+</body>
+
+</html>
